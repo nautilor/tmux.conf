@@ -6,7 +6,7 @@
 
 ## Custom Keybindings
 
-> I remapped <C-a> as my prefix as it is easier to hit
+> I remapped \<C-a> as my prefix as it is easier to hit
 
 | Shortcut      | Command                          |
 | ------------- | -------------------------------- |
@@ -48,4 +48,4 @@ cp tmux.conf $HOME/.tmux.conf
 ln -sf `pwd`/tmux.conf $HOME/.tmux.conf
 ```
 
-- Start tmux and install all the plugins using `<C-A> + I`
+- Start tmux and install all the plugins using `<prefix> + I`
