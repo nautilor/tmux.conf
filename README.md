@@ -34,7 +34,9 @@
 | M-p           | previous pane                    |
 | M-x           | kill pane                        |
 | M-s           | split horizonal on current path  |
-| m-b           | split vertical on current path   |
+| M-v           | split vertical on current path   |
+| M-,           | rename current pane (prompt)     |
+| M-4           | rename current session (prompt)  |
 
 ## Installation
 
