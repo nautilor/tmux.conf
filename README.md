@@ -51,3 +51,8 @@ ln -sf `pwd`/tmux.conf $HOME/.tmux.conf
 ```
 
 - Start tmux and install all the plugins using `<prefix> + I`
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
