@@ -6,6 +6,7 @@ Personal configuration for [tmux](https://github.com/tmux/tmux), focused on fast
 
 - [tmux](https://github.com/tmux/tmux/)
 - [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm)
+- [lazygit](https://github.com/jesseduffield/lazygit)
 - `bin/shortpath.sh` – Script used to shorten file paths in the status bar
 
 ## Installation
@@ -52,6 +53,7 @@ Ctrl + d
 | `<prefix> + n` | Next window |
 | `<prefix> + m` | Previous window |
 | `<prefix> + c` | Kill current window |
+| `<prefix> + l` | Open a floating window with lazygit | 
 | `<prefix> + ,` | Rename current window |
 
 ### Pane Management
