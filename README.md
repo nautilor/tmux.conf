@@ -4,7 +4,7 @@ This is my personal [Tmux](https://github.com/tmux/tmux/) configuration.
 ## Dependencies
 - [Tmux](https://github.com/tmux/tmux/)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-- [shortpath.sh](./shortpath.sh): A script to shorten file paths in the Tmux status bar.
+- [shortpath.sh](./bin/shortpath.sh): A script to shorten file paths in the Tmux status bar.
 
 ## Plugins
 
