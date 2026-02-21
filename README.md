@@ -1,27 +1,67 @@
 # TMUX Configuration
-This is my personal [Tmux](https://github.com/tmux/tmux/) configuration.
 
-## Dependencies
-- [Tmux](https://github.com/tmux/tmux/)
-- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
-- [shortpath.sh](./bin/shortpath.sh): A script to shorten file paths in the Tmux status bar.
+Personal configuration for [tmux](https://github.com/tmux/tmux), focused on fast window management, consistent pane behavior, and minimal friction while working.
+
+## Requirements
+
+- [tmux](https://github.com/tmux/tmux/)
+- [Tmux Plugin Manager (TPM)](https://github.com/tmux-plugins/tpm)
+- `bin/shortpath.sh` – Script used to shorten file paths in the status bar
+
+## Installation
+
+```bash
+git clone <your-repo-url> ~/.config/tmux
+```
+
+Inside tmux, install plugins with:
+
+```bash
+<prefix> + I
+```
+
+(Requires TPM to be installed.)
 
 ## Plugins
 
-- [tmux-mighty-scroll](https://github.com/noscript/tmux-mighty-scroll): A Tmux plugin that allows you to scroll through your terminal output with ease.
+- [tmux-mighty-scroll](https://github.com/noscript/tmux-mighty-scroll)  
+  Enables smooth and convenient scrolling through terminal output.
 
-## Custom Key Bindings
-- `Ctrl + d`: Custom prefix key
-- `Alt + r`: Reload Tmux configuration
-- `<prefix> + r`: Reload Tmux configuration
-- `<prefix> + j`: new-window -c "#{pane_current_path}"
-- `<prefix> + n`: next-window
-- `<prefix> + m`: previous-window
-- `<prefix> + s`: split-window -v -c "#{pane_current_path}"
-- `<prefix> + v`: split-window -h -c "#{pane_current_path}"
-- `<prefix> + c`: kill-window
-- `<prefix> + ,`: command-prompt -p "Rename window:" "rename-window '%%'"
+## Custom Prefix Key
 
+The default tmux prefix (`Ctrl + b`) is replaced with:
 
+```
+Ctrl + d
+```
 
+## Key Bindings
 
+### Configuration
+
+| Key | Action |
+|-----|--------|
+| `Alt + r` | Reload tmux configuration |
+| `<prefix> + r` | Reload tmux configuration |
+
+### Window Management
+
+| Key | Action |
+|-----|--------|
+| `<prefix> + j` | Create new window in current pane path |
+| `<prefix> + n` | Next window |
+| `<prefix> + m` | Previous window |
+| `<prefix> + c` | Kill current window |
+| `<prefix> + ,` | Rename current window |
+
+### Pane Management
+
+| Key | Action |
+|-----|--------|
+| `<prefix> + s` | Split vertically (preserve current path) |
+| `<prefix> + v` | Split horizontally (preserve current path) |
+
+## Notes
+
+- All new windows and splits inherit the current pane’s working directory.
+- The status bar uses `shortpath.sh` to keep paths compact and readable.
